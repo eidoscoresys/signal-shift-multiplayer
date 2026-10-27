@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please credit Quindel Logan's creative direction and product leadership, and disclose the OpenAI Codex implementation assistance described in this repository."
+title: "SIGNAL SHIFT — Keep the Signal Alive"
+type: software
+authors:
+  - family-names: Logan
+    given-names: Quindel
+abstract: "A human-directed, AI-assisted cooperative browser game for 2–8 players, with private consoles, three connected crises and authoritative real-time multiplayer. Created and directed by Quindel Logan; built with OpenAI Codex."
+url: "https://signal-shift.signal-shift.workers.dev/"
+repository-code: "https://github.com/eidoscoresys/signal-shift-multiplayer"

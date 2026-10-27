@@ -1,0 +1,21 @@
+import { test, expect } from '@playwright/test';
+test('HTTP validation and authentication use the actual Worker runtime', async ({ request }) => {
+    expect((await request.post('/api/rooms/INVALID!/join', { data: { name: 'Nova' } })).status()).toBe(400);
+    expect((await request.post('/api/rooms/ZZZZZZ/join', { data: { name: 'Nova' } })).status()).toBe(404);
+    expect((await request.post('/api/create', { headers: { Origin: 'https://evil.example' } })).status()).toBe(403);
+    expect((await request.post('/api/create', { data: 'x'.repeat(2048) })).status()).toBe(413);
+    const document = await request.get('/');
+    expect(document.headers()['content-security-policy']).toContain('frame-ancestors');
+    const { code } = await (await request.post('/api/create')).json();
+    expect(code).toMatch(/^[A-HJ-NP-Z2-9]{6}$/);
+    expect((await request.get(`/api/rooms/${code}/socket`)).status()).toBe(401);
+    expect((await request.post(`/api/rooms/${code}/join`, { data: { name: '<script>' } })).status()).toBe(400);
+    expect((await request.post(`/api/rooms/${code}/join`, { data: { name: 'Nova' }, headers: { Origin: 'https://evil.example' } })).status()).toBe(403);
+    const joined = await request.post(`/api/rooms/${code}/join`, { data: { name: 'Nova' } });
+    expect(joined.ok()).toBe(true);
+    const cookie = joined.headers()['set-cookie'];
+    expect(cookie.includes('HttpOnly')).toBe(true);
+    expect(cookie.includes('SameSite=Strict')).toBe(true);
+    const again = await request.post(`/api/rooms/${code}/join`, { data: { name: 'Other' } });
+    expect((await again.json()).id).toBe((await joined.json()).id);
+});

@@ -1,0 +1,37 @@
+{
+  "name": "signal-shift",
+  "version": "1.0.0-rc.3",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "server": "wrangler dev --port 8787",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "test:browser": "pnpm build && playwright test",
+    "deploy": "pnpm build && wrangler deploy",
+    "check": "tsc --noEmit",
+    "cover": "node scripts/render-cover.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@cloudflare/workers-types": "^5.20261025.1",
+    "@playwright/test": "^1.56.0",
+    "@tailwindcss/vite": "^4.1.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0",
+    "vitest": "^3.2.0",
+    "wrangler": "^4.45.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "Historical verification summary extracted from the locally preserved rc.2 release manifest; not a reconstructed per-test execution log",
+  "release": "1.0.0-rc.2",
+  "publicUrl": "https://signal-shift.signal-shift.workers.dev",
+  "deploymentVersion": "014fbf7f-e5e9-4420-893c-de3fdc57ac52",
+  "recordedUtc": "2026-10-27T16:59:08.3630652Z",
+  "verification": {
+    "localIntegrationPassed": 25,
+    "publicSkipped": 0,
+    "localSecurityRecheckPassed": 1,
+    "localEightPlayerRecheckPassed": 1,
+    "unitPassed": 35,
+    "publicIntegrationPassed": 21,
+    "physicalDevices": "unverified"
+  },
+  "sourceFiles": 59,
+  "sourceArchiveSha256": "b2896ed9c41e163088df46dcad2f0c3fe9a1e74f791d72ffa58f026b97fff240",
+  "sourceManifestSha256": "e14d150267b6bb36697279993bf1ff068cf6dfd5dbd264d810c2bc447aafde91"
+}
