@@ -29,9 +29,11 @@ for (const count of [2, 4, 8])
             await pages[1].evaluate(() => (window as unknown as {
                 testSocket: WebSocket;
             }).testSocket.close());
-            await expect(pages[1].locator('.link-status')).toContainText('RECONNECTING');
+            // A browser close handshake during simulated network loss can outlast the default 5s assertion.
+            // Preserve the documented 35s heartbeat recovery budget with a bounded transport margin.
+            await expect(pages[1].locator('.link-status')).toContainText('RECONNECTING', { timeout: 45000 });
             await contexts[1].setOffline(false);
-            await expect(pages[1].locator('.link-status')).toContainText('LIVE');
+            await expect(pages[1].locator('.link-status')).toContainText('LIVE', { timeout: 20000 });
             await pages[1].reload();
             await expect(pages[1].locator('.callout-feed li')).toHaveCount(count);
             const restored = await view(pages[1]);

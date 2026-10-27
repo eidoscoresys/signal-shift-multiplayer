@@ -1,6 +1,6 @@
 # Release package checklist
 
-Release candidate: 1.0.0-rc.2. This document distinguishes prepared material from verified release outcomes. Public game: https://signal-shift.signal-shift.workers.dev. Build and deployment details are recorded in RELEASE.md. Verification passed: 35 unit, 25 local integration and 21 published integration tests.
+Release candidate: 1.0.0-rc.3. This document distinguishes prepared material from verified release outcomes. Public game: https://signal-shift.signal-shift.workers.dev. Build and deployment details are recorded in RELEASE.md. Verification passed: 35 unit, 27 local integration and 23 published integration tests.
 
 Prepared materials:
 
@@ -13,7 +13,7 @@ Prepared materials:
 - Deployment/configuration runbook: DEPLOYMENT.md.
 - Source: src/, server/, shared/, tests/, scripts/, public/, assets/ plus pinned package/TypeScript/Vite/Wrangler configuration.
 
-Source repository status at review: local Git repository exists, but it has no commits and no remote configured. There is no GitHub repository URL to report. The release source archive and SHA-256 manifests preserve the exact release files without including node_modules, .wrangler, cookies, traces, OAuth configuration or credential material. Publishing a source repository is separate from publishing the playable Worker.
+Public source repository: https://github.com/eidoscoresys/signal-shift-multiplayer. Quindel Logan approved public creation, source push and a verified tagged release. GitHub associates the commits with the confirmed creator account and noreply identity. Original private checkpoint refs remain local; no historical authors or dates were rewritten. The release source package excludes dependencies, runtime/session data, credentials and raw traces. Licensing remains unassigned.
 
 Before final submission, attach the prepared source archive/manifest and review actual physical-device results or keep them labeled unverified. The literal public URL and successful published outcomes are already recorded. Do not submit a localhost address as a public game URL.
 

@@ -1,6 +1,6 @@
 # Cloudflare deployment and public acceptance
 
-Current public candidate: https://signal-shift.signal-shift.workers.dev. Build 1.0.0-rc.2; deployment 014fbf7f-e5e9-4420-893c-de3fdc57ac52. Final verification is recorded in TEST-REPORT.md.
+Current public candidate: https://signal-shift.signal-shift.workers.dev. Build 1.0.0-rc.3; deployment 759a616d-9912-43cd-a655-1380d07c2c7f. Current verification is recorded in PORTFOLIO-TEST-REPORT.md; TEST-REPORT.md preserves the prior rc.2 baseline.
 
 ## Ready locally
 
@@ -53,6 +53,6 @@ If deployment fails, preserve local source, SQLite state and test evidence. Insp
 
 
 
-## Portfolio candidate gate
+## Portfolio release verification
 
-The rc.3 credits candidate remains local until its repository link and publication permissions are resolved. Its complete suites contain 27 local scenarios and 23 public scenarios (including two credits checks). Do not run a candidate version check against the older deployed rc.2 and report the expected version mismatch as a gameplay regression. After authorized deployment, run the matching full public suite and supply the actual new Worker deployment identifier to scripts/package-source.ps1. The package script rejects a mismatched deployed/package version and incomplete reports.
+The rc.3 credits release and its repository link were published with explicit creator approval. Its complete suites contain 27 local scenarios and 23 public scenarios (including two credits checks). Use the source revision matching the deployed build for public checks. After authorized deployment, run the matching full public suite and supply the actual new Worker deployment identifier to scripts/package-source.ps1. The package script rejects a mismatched deployed/package version and incomplete reports. The matching rc.3 suite passed all 23 public scenarios.

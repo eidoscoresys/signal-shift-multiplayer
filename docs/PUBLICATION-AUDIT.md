@@ -1,6 +1,6 @@
 # Prepublication audit summary
 
-Status: working-tree, full Git object and index reviews prepared for publication; 77 reviewed candidate files. The final private audit report records hashes and any remaining staged/working-tree differences. No GitHub repository has been created or pushed.
+Status: working-tree, full Git object and index reviews prepared for publication; 77 reviewed candidate files. The final private audit report records hashes and any remaining staged/working-tree differences. The approved public repository has received the audited initial source; the final verification record is audited again before its commit/tag.
 
 ## Original Git state
 
@@ -21,4 +21,4 @@ The complete first-party working tree is inspected, including ignored first-part
 
 The reproducible audit script is scripts/audit-publication.mjs. Its detailed report, candidate paths/sizes/hashes and any local-only metadata are written under ignored publication/. Matches are reported by category/location/line without printing matched credentials or session values. Inspect the final Git index and new commit objects again immediately before an authorized push. Push only the explicit reviewed branch and version tag, never all refs.
 
-GitHub authorization, the authorized author name/email, repository visibility and permission to push remain separate gates. A completed scan does not itself authorize publication.
+GitHub authorization, the author/noreply confirmation and explicit public creation/push/release approval were obtained before publication. A completed scan alone did not authorize publication.

@@ -8,3 +8,5 @@ authors:
 abstract: "A human-directed, AI-assisted cooperative browser game for 2–8 players, with private consoles, three connected crises and authoritative real-time multiplayer. Created and directed by Quindel Logan; built with OpenAI Codex."
 url: "https://signal-shift.signal-shift.workers.dev/"
 repository-code: "https://github.com/eidoscoresys/signal-shift-multiplayer"
+version: "1.0.0-rc.3"
+date-released: "2026-10-27"

@@ -43,7 +43,7 @@ Missing command-line tooling was resolved using an available supported Node/pnpm
 
 ## Live playtesting changed the finale
 
-In the first reported cooperative human playtest, Power and Cooling were solved. The crew reached Final Override with **1:46 remaining** and finished at **80% integrity** after the mission clock expired. Quindel identified communication latency and unclear responsibilities as the main issue, rather than excessive difficulty or integrity loss.
+In the first reported live cooperative playtest, Quindel played with Codex acting as a browser teammate. Power and Cooling were solved. The crew reached Final Override with **1:46 remaining** and finished at **80% integrity** after the mission clock expired. Quindel identified communication latency and unclear responsibilities as the main issue, rather than excessive difficulty or integrity loss.
 
 The resulting product decision was deliberately narrow: preserve the five-minute timer, private information, cooperation and puzzle difficulty; reduce uncertainty about who knows what and who should act next.
 
@@ -68,4 +68,4 @@ Public testing exposed assumptions in the test harness: a replacement socket cou
 
 A two-player prototype grew into a publicly playable 2–8-player three-crisis campaign with real authoritative multiplayer and verified published acceptance. The playable URL, original artwork, actual screenshots, source code and verification record support a portfolio review. No competition award, submitted entry, external user metric or unperformed device test is claimed.
 
-The rc.3 portfolio candidate adds creator/AI attribution and a separate About / Credits page. Its publication status and new verification results are recorded separately in PORTFOLIO-TEST-REPORT.md and PUBLICATION.md. Historical product milestones are not retroactively converted into invented Git commits.
+The rc.3 portfolio release adds creator/AI attribution and a separate About / Credits page. It passed 35 unit, 27 local browser and 23 public acceptance tests. The credits and public GitHub link are live. Its publication status and new verification results are recorded separately in PORTFOLIO-TEST-REPORT.md and PUBLICATION.md. Historical product milestones are not retroactively converted into invented Git commits.

@@ -31,9 +31,9 @@ for (const count of [2, 3, 4, 5, 6, 7, 8])
             await analyst.evaluate(() => (window as unknown as {
                 testSocket: WebSocket;
             }).testSocket.close());
-            await expect(analyst.locator('.link-status')).toContainText('RECONNECTING');
+            await expect(analyst.locator('.link-status')).toContainText('RECONNECTING', { timeout: 45000 });
             await contexts[1].setOffline(false);
-            await expect(analyst.locator('.link-status')).toContainText('LIVE');
+            await expect(analyst.locator('.link-status')).toContainText('LIVE', { timeout: 20000 });
             await analyst.reload();
             await expect(analyst.getByRole('heading', { name: 'Thermal Analyst' })).toBeVisible();
             if (count === 2) {
@@ -56,9 +56,9 @@ for (const count of [2, 3, 4, 5, 6, 7, 8])
                 await engineer.evaluate(() => (window as unknown as {
                     testSocket: WebSocket;
                 }).testSocket.close());
-                await expect.poll(async () => (await view(analyst)).host).not.toBe(prior.you);
+                await expect.poll(async () => (await view(analyst)).host, { timeout: 55000 }).not.toBe(prior.you);
                 await contexts[0].setOffline(false);
-                await expect(engineer.locator('.link-status')).toContainText('LIVE');
+                await expect(engineer.locator('.link-status')).toContainText('LIVE', { timeout: 20000 });
                 const restored = await view(engineer);
                 expect(restored.you).toBe(prior.you);
                 expect(restored.players.find(p => p.id === restored.you)?.role).toBe('engineer');

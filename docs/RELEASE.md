@@ -1,24 +1,24 @@
-# SIGNAL SHIFT — Public release candidate
+# SIGNAL SHIFT — Verified creator credits release
 
-Play: https://signal-shift.signal-shift.workers.dev
+**Version:** 1.0.0-rc.3  
+**Verified:** October 27, 2026  
+**Created and Directed by:** Quindel Logan  
+**Built with:** OpenAI Codex under the creator's direction
 
-Build: 1.0.0-rc.2. Cloudflare deployment version: 014fbf7f-e5e9-4420-893c-de3fdc57ac52. Published and verified October 27, 2026 (America/New_York).
+- Play: https://signal-shift.signal-shift.workers.dev/
+- About / Credits: https://signal-shift.signal-shift.workers.dev/about
+- Public source: https://github.com/eidoscoresys/signal-shift-multiplayer
+- Tagged release: https://github.com/eidoscoresys/signal-shift-multiplayer/releases/tag/v1.0.0-rc.3
+- Worker deployment: 759a616d-9912-43cd-a655-1380d07c2c7f.
 
-Verification: 35 unit tests, 25 local integration tests and 21 published-version integration tests passed. The published suite completed missions for every crew size 2–8 and verified HTTPS/WSS, privacy/isolation, secure sessions, recovery, replay, scoring and the actual server deadline. See TEST-REPORT.md for methods, limits and evidence.
+The accessible credits page acknowledges game concept, product design, creative direction and AI-assisted development oversight. It opens separately without replacing the active console. README branding, actual gameplay screenshots, a contribution record, citation metadata and a technical case study document the human-led, AI-assisted development process.
 
-Final Override update: role-specific relay instructions, three shared quick-callouts, current-step ownership and persistent success feedback. Timer, puzzle difficulty and private-clue rules are preserved. The updated finale passed 2-, 4- and 8-player public tests with reconnect and privacy checks.
+Verification: 35 unit tests, 27 complete local browser scenarios and 23 published HTTPS/WSS scenarios passed. Final credits/link and eight-player recovery rechecks also passed. TypeScript, production build, Worker dry run, anonymous public attribution/image checks and byte matching of all six deployed static files passed. PORTFOLIO-TEST-REPORT.md records the actual methods, failed-attempt diagnosis, corrected test waits and limits.
 
-Full cover: https://signal-shift.signal-shift.workers.dev/signal-shift-cover.png — 1600×900 PNG.
+Source delivery: the GitHub version tag and release source package. The source package contains the reviewed project files and a per-file SHA-256 manifest; delivery metadata records archive/cover/thumbnail hashes. Credentials, private audit/auth files, dependencies, build caches, raw reports/traces and session databases are excluded. The original user checkout had no commits; initial source import and release-record commits use truthful current dates and the confirmed GitHub noreply identity. Private checkpoint refs are preserved locally and excluded from publication.
 
-Thumbnail: https://signal-shift.signal-shift.workers.dev/signal-shift-thumbnail.png — 640×360 PNG.
+No open-source license has been selected; package.json records UNLICENSED. See LICENSE-OPTIONS.md. Dependencies retain their own terms.
 
-Players need no accounts or installations. Use a voice call or sit together. Create/join with the six-character code, then follow the briefing/context help. PLAYER-GUIDE.md explains the rules. CROSS-DEVICE-TEST.md gives the precise real-device procedure.
+Physical phones, Safari/Firefox, separate internet connections, dedicated 24-hour cleanup soak and platform-forced hibernation remain unverified. No new human usability study, competition award or submitted competition form is claimed. The October 29 working-public-release target is met; October 30 remains the planned final-testing/submission buffer without implying a scheduled automation.
 
-Source delivery: release/signal-shift-1.0.0-rc.2-source.zip. Per-file hashes are in release/source-manifest.json and the ZIP/cover/thumbnail hashes are in release/delivery-manifest.json. Generated test traces, SQLite databases, dependencies, OAuth files and credentials are excluded. A source repository exists locally but has no commits or configured remote; there is no GitHub URL.
-
-Remaining human checks: actual phones, Safari/Firefox and two separate Internet connections. They are NOT verified by browser contexts on one workstation. A dedicated 24-hour cleanup soak and platform-controlled hibernation eviction test also remain outstanding.
-
-Target October 29 for public release is met by this verified candidate ahead of schedule. October 30 remains the planned physical-device/final submission buffer. This record does not schedule background runs or claim that a competition form was submitted.
-
-
-Portfolio preparation note: the historical rc.2 source archive is preserved locally and excluded from GitHub publication. The audited rc.3 candidate, creator credits and planned GitHub release have their own status in PUBLICATION.md and PORTFOLIO-TEST-REPORT.md. This historical release record is not evidence that the candidate or repository has been published.
+The historical rc.2 release record remains in TEST-REPORT.md and verification/released-rc2.json; its original source archive remains local and excluded from this publication.

@@ -75,11 +75,11 @@ Random HttpOnly room-scoped cookies authenticate returning players. Secure cooki
 
 ## Verified release and testing
 
-The **1.0.0-rc.2 gameplay baseline** was deployed to Cloudflare Workers and verified on October 27, 2026. Its completed checks are **35 unit tests, 25 local browser tests and 21 public HTTPS/WSS acceptance tests**, with no failures/skips/flaky outcomes in their final complete runs. The public suite completed full missions for every crew size **2, 3, 4, 5, 6, 7 and 8** and exercised privacy, simultaneous inputs, recovery, replay, scoring, terminal states and the actual five-minute alarm.
+The current release, **1.0.0-rc.3**, is deployed to Cloudflare Workers and verified on October 27, 2026. Its completed checks are **35 unit tests, 27 local browser tests and 23 public HTTPS/WSS acceptance tests**, with no failures/skips/flaky outcomes in their final complete runs. The public suite completed full missions for every crew size **2, 3, 4, 5, 6, 7 and 8** and exercised privacy, simultaneous inputs, recovery, replay, scoring, terminal states and the actual five-minute alarm.
 
 The unit suite includes 700 action-solved campaigns across supported crew sizes and varied puzzle seeds. Automated accessibility scans found zero tagged WCAG A/AA violations on audited screens; this is not a full accessibility certification. Actual phones, Safari/Firefox, separate physical networks, a dedicated 24-hour cleanup soak and platform-forced hibernation remain unverified. [Methods, test-harness fixes and limitations](docs/TEST-REPORT.md) · [Historical release verification summary](docs/verification/released-rc2.json).
 
-The **rc.3 credits/portfolio update is in the approved release process**, with public-version verification pending. It passed 35 unit tests, the full 27-test local browser suite, and a final two-test credits recheck, plus TypeScript, production build and Worker deployment dry-run checks. [Candidate report](docs/PORTFOLIO-TEST-REPORT.md). Do not confuse candidate checks with the deployed rc.2 record.
+Creator credits are live on the accessible [About / Credits page](https://signal-shift.signal-shift.workers.dev/about), which opens without replacing the active console. Final credits/link and eight-player recovery rechecks passed alongside TypeScript, production build, deployment dry-run and published-asset checks. [Credits release report](docs/PORTFOLIO-TEST-REPORT.md). The earlier rc.2 verification record remains available separately.
 
 ## Local development
 
@@ -140,4 +140,4 @@ These are product milestones, not fabricated historical Git commits. The origina
 
 **No open-source license has been selected.** Public visibility alone does not grant general permission to reuse this project. Dependencies retain their own licenses. Review [licensing options](docs/LICENSE-OPTIONS.md) before choosing terms for code and artwork.
 
-The public repository https://github.com/eidoscoresys/signal-shift-multiplayer was created with Quindel's explicit approval. Its initial source push and verified release are being prepared through the reviewed publication workflow. [Publication review](docs/PUBLICATION.md).
+The public repository https://github.com/eidoscoresys/signal-shift-multiplayer was created with Quindel's explicit approval. The audited source and [tagged verified release](https://github.com/eidoscoresys/signal-shift-multiplayer/releases/tag/v1.0.0-rc.3) use the creator-approved Git identity and the reviewed publication workflow. [Publication review](docs/PUBLICATION.md).
